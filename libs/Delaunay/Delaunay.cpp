@@ -241,3 +241,8 @@ int XYZCompare(const void *v1, const void *v2){
        else
          return(0);
 }
+
+float dist(const XYZ & p1, const XYZ & p2){
+	return sqrtf( (p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y) + (p1.z - p2.z) * (p1.z - p2.z));
+}
+
